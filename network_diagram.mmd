@@ -1,6 +1,10 @@
 graph LR
-    subgraph Router
-        r[Router]
+    subgraph Router1
+        r1[Router 1]
+    end
+
+    subgraph Router2
+        r2[Router 2]
     end
 
     subgraph Firewall
@@ -32,7 +36,8 @@ graph LR
         to6(Employee 10)
     end
 
-    r --> f
+    r1 --> f
+    r2 --> f
     f --> sw
     sw --> cc
     sw --> sap
