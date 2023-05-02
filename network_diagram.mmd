@@ -13,6 +13,7 @@ graph LR
     
     subgraph CopyCenter
         cc(Copy Center)
+        sap(Security Access Point)
     end
 
     subgraph AccountingOffice
@@ -34,14 +35,14 @@ graph LR
     r --> f
     f --> sw
     sw --> cc
-    sw --> ao1
-    sw --> ao2
-    sw --> ao3
-    sw --> ao4
-    sw --> to1
-    sw --> to2
-    sw --> to3
-    sw --> to4
-    sw --> to5
-    sw --> to6
-
+    sw --> sap
+    sap --> ao1
+    sap --> ao2
+    sap --> ao3
+    sap --> ao4
+    sap --> to1
+    sap --> to2
+    sap --> to3
+    sap --> to4
+    sap --> to5
+    sap --> to6
