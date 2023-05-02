@@ -12,33 +12,36 @@ graph LR
     end
     
     subgraph CopyCenter
-        cc1(Employee 1)
-        cc2(Employee 2)
+        cc(Copy Center)
     end
 
     subgraph AccountingOffice
-        ao1(Employee 3)
-        ao2(Employee 4)
-        ao3(Employee 5)
+        ao1(Employee 1)
+        ao2(Employee 2)
+        ao3(Employee 3)
+        ao4(Employee 4)
     end
 
     subgraph TechOffice
-        to1(Employee 6)
-        to2(Employee 7)
-        to3(Employee 8)
-        to4(Employee 9)
-        to5(Employee 10)
+        to1(Employee 5)
+        to2(Employee 6)
+        to3(Employee 7)
+        to4(Employee 8)
+        to5(Employee 9)
+        to6(Employee 10)
     end
 
     r --> f
     f --> sw
-    sw --> cc1
-    sw --> cc2
+    sw --> cc
     sw --> ao1
     sw --> ao2
     sw --> ao3
+    sw --> ao4
     sw --> to1
     sw --> to2
     sw --> to3
     sw --> to4
     sw --> to5
+    sw --> to6
+
