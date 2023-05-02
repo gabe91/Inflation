@@ -7,41 +7,38 @@ graph LR
         f[Firewall]
     end
 
-    subgraph AccessPoints
-        ap1(Access Point 1)
-        ap2(Access Point 2)
-    end
-    
     subgraph Switch
         sw[Switch]
     end
     
-    subgraph Employees
-        e1(Employee 1)
-        e2(Employee 2)
-        e3(Employee 3)
-        e4(Employee 4)
-        e5(Employee 5)
-        e6(Employee 6)
-        e7(Employee 7)
-        e8(Employee 8)
-        e9(Employee 9)
-        e10(Employee 10)
+    subgraph CopyCenter
+        cc1(Employee 1)
+        cc2(Employee 2)
+    end
+
+    subgraph AccountingOffice
+        ao1(Employee 3)
+        ao2(Employee 4)
+        ao3(Employee 5)
+    end
+
+    subgraph TechOffice
+        to1(Employee 6)
+        to2(Employee 7)
+        to3(Employee 8)
+        to4(Employee 9)
+        to5(Employee 10)
     end
 
     r --> f
     f --> sw
-    sw --> ap1
-    sw --> ap2
-
-    ap1 --> e1
-    ap1 --> e2
-    ap1 --> e3
-    ap1 --> e4
-    ap1 --> e5
-
-    ap2 --> e6
-    ap2 --> e7
-    ap2 --> e8
-    ap2 --> e9
-    ap2 --> e10
+    sw --> cc1
+    sw --> cc2
+    sw --> ao1
+    sw --> ao2
+    sw --> ao3
+    sw --> to1
+    sw --> to2
+    sw --> to3
+    sw --> to4
+    sw --> to5
